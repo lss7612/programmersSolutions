@@ -32,3 +32,13 @@ console.log(test);
 //맵이라는 메소드가 없으면 포문을 써서 새로운 배열을 얻어낼 수 있겠다.
 //비교해보면 포문에 비해 크게 편한 방법처럼 보이지는 않는다.
 //하지만 arrow_function을 만나면 그렇지 않다.
+
+const matrix = [
+  [1, 2, 3, 4, 5],
+  [1, 2, 3, 4, 5],
+  [1, 2, 3, 4, 5],
+  [1, 2, 3, 4, 5],
+  [1, 2, 3, 4, 5],
+];
+matrix.map((_, matrix) => matrix.length);
+console.log(matrix);

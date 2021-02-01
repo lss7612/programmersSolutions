@@ -6,7 +6,8 @@
 const array1 = [1, 2, 3, 4];
 const reducer = (accumulator, currenctValue) => accumulator + currenctValue;
 
-console.log(array1.reduce(reducer));
+console.log(array1.reduce(reducer)); //10 출력=
+
 //initial 값이 있는지 확인하고, 없으면 acc에 배열의 0번쨰 값을 넣는다. 그리고 idx값은 ++된다.
 //1. acc = 1; cur = 2; >연산값을 acc 집어넣는다. acc=3;
 //2. acc = 3; cur = 3; > 6->acc
@@ -15,6 +16,7 @@ console.log(array1.reduce(reducer));
 //10 출력
 
 console.log(array1.reduce(reducer, 5));
+
 //initial 값이 있는지 확인하고, 있어서 acc값에 initial값을 넣는다.
 //1.acc = 5; cur = 1;
 //2.acc = 6; cur = 2;
