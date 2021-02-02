@@ -43,13 +43,14 @@ function solution(n) {
     
     //console.log(base3)
     
-    if( base3.indexOf(0) == 0){
-        base3.shift();
-    }
-    
-    //console.log(base3);
     for( var i=0; i<base3.length; i++){
+        if(i == 0 && base3[i] ==0) {
+            continue;
+        }
         answer += base3[i];
     }
+    
+    //console.log(base3)
+    
     return answer;
 }
