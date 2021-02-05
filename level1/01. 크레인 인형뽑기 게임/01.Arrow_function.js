@@ -11,6 +11,7 @@
 const meterial = ['Hydrogen', 'Heliym', 'Lithum', 'Beryllium'];
 console.log('Arrow function 출력');
 console.log(meterial.map((meterial) => meterial.length));
+
 //[8,6,6,9] 출력
 
 //위 예제를 화살표함수가 아닌 일반 익명함수를 사용해야 한다면 아래와 같을 것이다.

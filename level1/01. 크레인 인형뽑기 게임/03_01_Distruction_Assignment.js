@@ -18,11 +18,6 @@ console.log(b);
 
 //분해한 값이 undefined 일 때는 기본값을 그대로 쓴다.
 console.log('***출력3***');
-let x = 0,
-  y = 0;
-[x, y] = [1];
-console.log(x);
-console.log(y);
-[x = 0, y = 0] = [1];
-console.log(x);
-console.log(y);
+let [x = 0, y = 0] = [1];
+console.log(x); //1
+console.log(y); //0

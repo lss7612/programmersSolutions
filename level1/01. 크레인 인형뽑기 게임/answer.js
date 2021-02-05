@@ -1,7 +1,16 @@
+let board = [
+  [0, 0, 0, 0, 0],
+  [0, 0, 1, 0, 3],
+  [0, 2, 5, 0, 1],
+  [4, 2, 4, 4, 2],
+  [3, 5, 1, 3, 1],
+];
+
 const transpose = (matrix) =>
   matrix.reduce((result, row) => row.map((_, i) => [...(result[i] || []), row[i]]), []);
 
 const solution = (board, moves) => {
+  console.log(transpose(board));
   const stacks = transpose(board).map((row) => row.reverse().filter((el) => el !== 0));
   console.log(stacks);
   const basket = [];
@@ -20,13 +29,7 @@ const solution = (board, moves) => {
 
   return result;
 };
-let board = [
-  [0, 0, 0, 0, 0],
-  [0, 0, 1, 0, 3],
-  [0, 2, 5, 0, 1],
-  [4, 2, 4, 4, 2],
-  [3, 5, 1, 3, 1],
-];
+
 let stacks = [
   [3, 4],
   [5, 2, 2],

@@ -12,3 +12,4 @@ console.log(
 
 const a = ['abc', 'ab'];
 console.log(a.map((a) => a.length));
+//[3,2]
