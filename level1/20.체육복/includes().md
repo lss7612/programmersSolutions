@@ -1,5 +1,6 @@
 ## array.includes();
-
+- `includes()`메서드는 배열이 특정 요소를 포함하고 있는지 판별한다.
+- URL : https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/includes
 ### 구문
 ```javascript
 arr.includes(valueToFind[, fromIndex])
