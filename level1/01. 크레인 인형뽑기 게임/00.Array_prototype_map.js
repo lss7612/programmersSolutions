@@ -41,4 +41,5 @@ const matrix = [
   [1, 2, 3, 4, 5],
 ];
 matrix.map((_, matrix) => matrix.length);
+console.log('2차원배열 map')
 console.log(matrix);
